@@ -1,0 +1,4 @@
+*.sage.py
+.DS_Store
+__pycache__
+remove_useless.sh
