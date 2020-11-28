@@ -10,7 +10,7 @@
 ### Factorize modular 
 
 * [factordb](./scripts/RSA/factordb.py) - API for getting well-known prime in FactorDB
-* [Pollard's rho](./scripts/RSA/fermat_factorization.py) - Efficient factor N when (p - 1) is smooth
+* [Pollard's rho](./scripts/RSA/pollard.py) - Efficient factor N when (p - 1) is smooth
 * [William's p+1] - Efficient factor N when (p + 1) is smooth
 * [Fermat factorization](./scripts/RSA/fermat_factorization.py) - Fermat Factorization : when p, q are close.
 * [Factors a number using the Elliptic Curve Method](https://github.com/martingkelly/pyecm/blob/master/pyecm.py) 
