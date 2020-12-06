@@ -1,4 +1,10 @@
-## Classical Cipher
+# Function
+
+### XOR function
+
+```python
+xor = lambda a, b: bytes(ai ^ bi for ai, bi in zip(a, b))
+```
 
 ## Hash
 
@@ -7,12 +13,21 @@
 
 ## RSA
 
+
 ### Factorize modular 
 
-* [factordb](./scripts/RSA/factordb.py) - API for getting well-known prime in FactorDB
-* [Pollard's rho](./scripts/RSA/pollard.py) - Efficient factor N when (p - 1) is smooth
-* [William's p+1] - Efficient factor N when (p + 1) is smooth
-* [Fermat factorization](./scripts/RSA/fermat_factorization.py) - Fermat Factorization : when p, q are close.
+#### Tools
+
+[FactorDB](http://factordb.com/)
+[Integer factorization calculator](https://www.alpertron.com.ar/ECM.HTM)
+[YAFU Docker (Yet Another Factoring Utility)](https://hub.docker.com/r/eyjhb/yafu)
+
+#### Scripts
+
+* [factordb API](./scripts/factorization/factordb.py) - API for getting well-known prime in FactorDB
+* [Pollard's rho](./scripts/factorization/pollard.py) - Efficient factor N when (p - 1) is smooth
+* [William's p+1](./scripts/factorization/pollard.py)  - Efficient factor N when (p + 1) is smooth
+* [Fermat factorization](./scripts/factorization/fermat_factorization.py) - Fermat Factorization : when p, q are close.
 * [Factors a number using the Elliptic Curve Method](https://github.com/martingkelly/pyecm/blob/master/pyecm.py) 
 
 ### with low exponent
@@ -72,9 +87,9 @@ openssl pkcs12 -in keyStore.pfx -out keyStore.pem -nodes
 
 ## Cryptosystem
 
-* [Paillier](./scripts/Cryptosystem/Paillier.py)
-* [SchmidtSamoa](./scripts/Cryptosystem/SchmidtSamoa.py)
-* [OkamotoUchiyama](./scripts/Cryptosystem/OkamotoUchiyama.py)
+* [Paillier](./scripts/cryptosystem/Paillier.py)
+* [SchmidtSamoa](./scripts/cryptosystem/SchmidtSamoa.py)
+* [OkamotoUchiyama](./scripts/cryptosystem/OkamotoUchiyama.py)
 
 ## NTRU
 

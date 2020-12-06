@@ -28,12 +28,10 @@ def factordb(n):
         if ('.' in s) :
             for a in td[13].select('a') :
                 if s == a.string:
-                    
                     temp1 = requests.get('http://factordb.com/'+ a['href'])
                     tsoup = BeautifulSoup(temp1.text,'html.parser')
                     temp2 = requests.get('http://factordb.com/'+ tsoup.select('td')[12].a['href'])
                     tsoup2 = BeautifulSoup(temp2.text,'html.parser')
-                    
                     for dnum in tsoup2.select('td')[-1].strings:
                         factor += dnum.strip('\n')
                     break
