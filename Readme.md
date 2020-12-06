@@ -18,9 +18,9 @@ xor = lambda a, b: bytes(ai ^ bi for ai, bi in zip(a, b))
 
 #### Tools
 
-[FactorDB](http://factordb.com/)
-[Integer factorization calculator](https://www.alpertron.com.ar/ECM.HTM)
-[YAFU Docker (Yet Another Factoring Utility)](https://hub.docker.com/r/eyjhb/yafu)
+* [FactorDB](http://factordb.com/)
+* [Integer factorization calculator](https://www.alpertron.com.ar/ECM.HTM)
+* [YAFU Docker (Yet Another Factoring Utility)](https://hub.docker.com/r/eyjhb/yafu)
 
 #### Scripts
 
